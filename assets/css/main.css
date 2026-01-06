@@ -3448,6 +3448,91 @@ input, select, textarea {
 	}
 
 /* Banner */
+	/* Change site background to black */
+	html, body {
+	    background: #000000;  /* Changed from #1c1d26 to black */
+	}
+	
+	#banner {
+	    background-color: #000000;  /* Changed from #272833 to black */
+	}
+	
+	/* Fix the name image (kuhu canva) size */
+	#banner .content header h2.name-image {
+	    margin: 0 0 1em 0;
+	}
+	
+	#banner .content header h2.name-image img {
+	    max-width: 500px;
+	    width: 100%;
+	    height: auto;
+	    display: block;
+	}
+	
+	/* Position profile image on the right */
+	#banner .content .image.profile-image {
+	    position: absolute;
+	    right: 8%;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    border-radius: 8px;
+	    height: auto;
+	    width: 20em;
+	    max-width: 35%;
+	    margin: 0;
+	    z-index: 2;
+	}
+	
+	#banner .content .image.profile-image img {
+	    border-radius: 8px;
+	    display: block;
+	    width: 100%;
+	    object-fit: cover;
+	}
+	
+	#banner .content .image.profile-image:before {
+	    display: none;  /* Remove overlay from profile image */
+	}
+	
+	/* Ensure content has space for the image */
+	#banner .content {
+	    display: block;
+	    text-align: left;
+	    padding: 6em;
+	    max-width: 60%;  /* Leave room for the profile image on the right */
+	}
+	
+	#banner .content header {
+	    display: block;
+	    text-align: left;
+	    margin-bottom: 1em;
+	}
+	
+	/* Mobile adjustments */
+	@media screen and (max-width: 980px) {
+	    #banner .content .image.profile-image {
+	        position: relative;
+	        right: auto;
+	        top: auto;
+	        transform: none;
+	        margin: 2em auto 0 auto;
+	        max-width: 60%;
+	        display: block;
+	    }
+	    
+	    #banner .content {
+	        max-width: 95%;
+	        text-align: center;
+	    }
+	    
+	    #banner .content header {
+	        text-align: center;
+	    }
+	    
+	    #banner .content header h2.name-image img {
+	        margin: 0 auto;
+	    }
+	}
 
 	#banner {
 	    background-attachment: fixed;
