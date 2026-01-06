@@ -3545,6 +3545,49 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
+
+		/* Position banner content and image */
+			#banner .content {
+			    display: flex;
+			    flex-direction: column;
+			    align-items: flex-start;
+			    text-align: left;
+			    padding: 6em;
+			    max-width: 95%;
+			}
+			
+			#banner .content header {
+			    width: 100%;
+			    text-align: left;
+			    margin-bottom: 2em;
+			}
+			
+			#banner .content header h2 {
+			    font-weight: 700 !important;  /* BOLD title */
+			}
+			
+			#banner .content .image {
+			    position: absolute;
+			    right: 5%;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    border-radius: 8px;
+			    height: auto;
+			    width: 25em;
+			    max-width: 40%;
+			    margin: 0;
+			}
+			
+			#banner .content .image img {
+			    border-radius: 8px;
+			    display: block;
+			    width: 100%;
+			    object-fit: cover;
+			}
+			
+			#banner .content .image:before {
+			    display: none;  /* Remove overlay from banner image */
+			}
 /* Footer */
 
 	#footer {
