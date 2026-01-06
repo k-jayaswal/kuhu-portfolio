@@ -3511,19 +3511,19 @@ input, select, textarea {
 				}
 
 			#banner .content .image {
-				border-radius: 100%;
-				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
-				vertical-align: middle;
-				width: 18em;
+			    border-radius: 8px;  /* Changed from 100% to 8px for rounded rectangle */
+			    display: inline-block;
+			    height: auto;  /* Changed from 18em to auto */
+			    margin-left: 3em;
+			    vertical-align: middle;
+			    width: 20em;  /* Changed from 18em to 20em for rectangle width */
 			}
-
-				#banner .content .image img {
-					border-radius: 100%;
-					display: block;
-					width: 100%;
-				}
+			
+			#banner .content .image img {
+			    border-radius: 8px;  /* Changed from 100% to 8px */
+			    display: block;
+			    width: 100%;
+			}
 
 	body.is-touch #banner {
 		background-attachment: scroll;
