@@ -2519,7 +2519,7 @@ input, select, textarea {
 
 		.image:before {
 			content: '';
-			display: block;
+			display: none;
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -3485,14 +3485,20 @@ input, select, textarea {
 		}
 
 		#banner .content {
-			display: inline-block;
-			margin-right: 1%;
-			max-width: 95%;
-			padding: 6em;
-			position: relative;
-			text-align: right;
-			vertical-align: middle;
-			z-index: 1;
+		    display: inline-block;
+		    margin-right: 1%;
+		    max-width: 95%;
+		    padding: 6em;
+		    position: relative;
+		    text-align: left;  /* Changed from right to left */
+		    vertical-align: middle;
+		    z-index: 1;
+		}
+		
+		#banner .content header {
+		    display: block;  /* Changed from inline-block */
+		    text-align: left;  /* Ensure text is left-aligned */
+		    margin-bottom: 1em;
 		}
 
 			#banner .content header {
@@ -3500,30 +3506,40 @@ input, select, textarea {
 				vertical-align: middle;
 			}
 
-				#banner .content header h2 {
-					font-size: 2.5em;
-					margin: 0;
-				}
 
-				#banner .content header p {
+			#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
 				}
 
-			#banner .content .image {
-			    border-radius: 8px;  /* Changed from 100% to 8px for rounded rectangle */
-			    display: inline-block;
-			    height: auto;  /* Changed from 18em to auto */
-			    margin-left: 3em;
-			    vertical-align: middle;
-			    width: 20em;  /* Changed from 18em to 20em for rectangle width */
-			}
-			
-			#banner .content .image img {
-			    border-radius: 8px;  /* Changed from 100% to 8px */
-			    display: block;
-			    width: 100%;
-			}
+				#banner .content header h2 {
+				    font-size: 5em;  /* Changed from 2.5em to 5em - HUGE title */
+				    margin: 0 0 0.3em 0;
+				    font-weight: 100;
+				    letter-spacing: 0.05em;
+				}
+				
+				#banner .content .image {
+				    border-radius: 8px;  /* Rectangular with rounded corners */
+				    display: block;  /* Changed from inline-block */
+				    height: auto;
+				    margin: 2em 0 0 0;  /* Changed positioning - removed margin-left */
+				    width: 25em;  /* Larger image */
+				    max-width: 100%;
+				    position: relative;
+				    z-index: 2;  /* Ensure image is on top */
+				}
+				
+				#banner .content .image img {
+				    border-radius: 8px;
+				    display: block;
+				    width: 100%;
+				    object-fit: cover;  /* Better image zoom/fit */
+				}
+				
+				#banner .content .image:before {
+				    display: none;  /* Remove overlay specifically from banner image */
+				}
 
 	body.is-touch #banner {
 		background-attachment: scroll;
