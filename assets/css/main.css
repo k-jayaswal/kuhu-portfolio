@@ -4413,7 +4413,7 @@ input, select, textarea {
 }
 
 #banner .logo-section img {
-    max-width: 350px !important;
+    max-width: 500px !important;
     width: 100% !important;
     height: auto !important;
     display: block !important;
@@ -4437,6 +4437,7 @@ input, select, textarea {
     border-radius: 12px !important;
     overflow: hidden !important;
     margin: 0 !important;
+    margin-top: 6em !important;
     padding: 0 !important;
 }
 
