@@ -4395,24 +4395,24 @@ body.landing:after {
     background: #0d0f21 !important;
 }
 
-/* Change all colored borders to purple (#7b68ee) */
+/* Change all colored borders to #3a47ba */
 .spotlight.style1 .content {
-    border-color: #7b68ee !important;
+    border-color: #3a47ba !important;
 }
 
 .spotlight.style2 .content {
-    border-color: #7b68ee !important;
+    border-color: #3a47ba !important;
 }
 
 .spotlight.style3 .content {
-    border-color: #7b68ee !important;
+    border-color: #3a47ba !important;
 }
 
 header.major:after {
-    background: #7b68ee !important;
+    background: #3a47ba !important;
 }
 
-/* Keep navigation links white, only change hover to purple */
+/* Keep navigation links white, change hover to #3a47ba */
 #header nav ul li a,
 #header nav ul li span {
     color: #ffffff !important;
@@ -4420,12 +4420,18 @@ header.major:after {
 
 #header nav ul li a:hover,
 #header nav ul li span:hover {
-    color: #7b68ee !important;
+    color: #3a47ba !important;
 }
 
-/* Change button hover color to purple */
+/* Make "Kuhu Jayaswal" logo bolder and white */
+#header h1 a {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Change button hover color to #3a47ba */
 a {
-    color: #7b68ee !important;
+    color: #3a47ba !important;
 }
 
 input[type="submit"]:hover, input[type="submit"]:active,
@@ -4435,22 +4441,22 @@ input[type="button"]:hover,
 input[type="button"]:active,
 .button:hover,
 .button:active {
-    box-shadow: inset 0 0 0 1px #7b68ee !important;
-    color: #7b68ee !important;
+    box-shadow: inset 0 0 0 1px #3a47ba !important;
+    color: #3a47ba !important;
 }
 
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
 .button:active {
-    background-color: rgba(123, 104, 238, 0.15) !important;
+    background-color: rgba(58, 71, 186, 0.15) !important;
 }
 
 input[type="submit"].primary,
 input[type="reset"].primary,
 input[type="button"].primary,
 .button.primary {
-    background-color: #7b68ee !important;
+    background-color: #3a47ba !important;
     box-shadow: none !important;
     color: #ffffff !important;
 }
@@ -4459,14 +4465,14 @@ input[type="submit"].primary:hover,
 input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 .button.primary:hover {
-    background-color: #8b7aee !important;
+    background-color: #4a57ca !important;
 }
 
 input[type="submit"].primary:active,
 input[type="reset"].primary:active,
 input[type="button"].primary:active,
 .button.primary:active {
-    background-color: #6b58de !important;
+    background-color: #2a37aa !important;
 }
 
 input[type="text"]:focus,
@@ -4474,26 +4480,26 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #7b68ee !important;
+    border-color: #3a47ba !important;
 }
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-    border-color: #7b68ee !important;
+    border-color: #3a47ba !important;
 }
 
 .dropotron > li.active > a, 
 .dropotron > li.active > span {
-    color: #7b68ee !important;
+    color: #3a47ba !important;
 }
 
 #header nav ul li.active > a, 
 #header nav ul li.active > span {
-    color: #7b68ee !important;
+    color: #3a47ba !important;
 }
 
 #titleBar .toggle:before {
-    background: #7b68ee !important;
+    background: #3a47ba !important;
 }
 
 /* Fix Banner Layout - Separate sections */
@@ -4565,7 +4571,7 @@ input[type="radio"]:focus + label:before {
     width: 380px;
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 #banner .profile-flex .image.profile-image img {
