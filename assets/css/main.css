@@ -4605,16 +4605,23 @@ input[type="radio"]:focus + label:before {
         gap: 3em;
     }
     
-    #banner .profile-flex-three .image.left-image,
-    #banner .profile-flex-three .image.profile-image {
-        flex: 0 0 auto;
-        width: 70%;
-        max-width: 350px;
+    #banner .profile-flex-three .left-column {
+        max-width: 100%;
+    }
+    
+    #banner .profile-flex-three .image.left-image {
+        max-width: 80%;
+        margin: 0 auto 2em auto;
     }
     
     #banner .profile-flex-three .description {
         text-align: center;
-        max-width: 90%;
+    }
+    
+    #banner .profile-flex-three .image.profile-image {
+        flex: 0 0 auto;
+        width: 70%;
+        max-width: 400px;
     }
 }
 
@@ -4623,7 +4630,10 @@ input[type="radio"]:focus + label:before {
         padding: 3em 1em 3em 1em;
     }
     
-    #banner .profile-flex-three .image.left-image,
+    #banner .profile-flex-three .image.left-image {
+        max-width: 90%;
+    }
+    
     #banner .profile-flex-three .image.profile-image {
         width: 85%;
     }
