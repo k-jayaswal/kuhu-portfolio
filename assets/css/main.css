@@ -4565,7 +4565,7 @@ input[type="radio"]:focus + label:before {
     width: 380px;
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 2em;
+    margin-top: 5em;
 }
 
 #banner .profile-flex .image.profile-image img {
