@@ -4355,282 +4355,132 @@ input, select, textarea {
 	}
 
 /* ============================================
-   COMPLETE FIXES - ADD TO END OF main.css
+   FRESH BANNER CSS - PASTE AT VERY END OF main.css
+   DELETE ALL OLD FIXES FIRST!
    ============================================ */
 
-/* Change all backgrounds to #0d0f21 */
-html, body {
-    background: #0d0f21 !important;
+/* Override all banner defaults */
+#banner * {
+    position: relative !important;
 }
 
 #banner {
-    background-color: #0d0f21 !important;
-}
-
-.spotlight {
-    background-color: #0d0f21 !important;
-}
-
-.spotlight .content {
-    background: rgba(13, 15, 33, 0.95) !important;
-}
-
-.wrapper {
     background: #0d0f21 !important;
-}
-
-#navPanel {
-    background: #0d0f21 !important;
-}
-
-#titleBar {
-    background: #0d0f21 !important;
-}
-
-body.landing:after {
-    background: #0d0f21 !important;
-}
-
-#footer {
-    background: #0d0f21 !important;
-}
-
-/* Change all colored borders to #3a47ba */
-.spotlight.style1 .content {
-    border-color: #3a47ba !important;
-}
-
-.spotlight.style2 .content {
-    border-color: #3a47ba !important;
-}
-
-.spotlight.style3 .content {
-    border-color: #3a47ba !important;
-}
-
-header.major:after {
-    background: #3a47ba !important;
-}
-
-/* Keep navigation links white, change hover to #3a47ba */
-#header nav ul li a,
-#header nav ul li span {
-    color: #ffffff !important;
-}
-
-#header nav ul li a:hover,
-#header nav ul li span:hover {
-    color: #3a47ba !important;
-}
-
-/* Make "Kuhu Jayaswal" logo bolder and white */
-#header h1 a {
-    color: #ffffff !important;
-    font-weight: 700 !important;
-}
-
-/* Change button hover color to #3a47ba */
-a {
-    color: #3a47ba !important;
-}
-
-input[type="submit"]:hover, input[type="submit"]:active,
-input[type="reset"]:hover,
-input[type="reset"]:active,
-input[type="button"]:hover,
-input[type="button"]:active,
-.button:hover,
-.button:active {
-    box-shadow: inset 0 0 0 1px #3a47ba !important;
-    color: #3a47ba !important;
-}
-
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active,
-.button:active {
-    background-color: rgba(58, 71, 186, 0.15) !important;
-}
-
-input[type="submit"].primary,
-input[type="reset"].primary,
-input[type="button"].primary,
-.button.primary {
-    background-color: #3a47ba !important;
-    box-shadow: none !important;
-    color: #ffffff !important;
-}
-
-input[type="submit"].primary:hover,
-input[type="reset"].primary:hover,
-input[type="button"].primary:hover,
-.button.primary:hover {
-    background-color: #4a57ca !important;
-}
-
-input[type="submit"].primary:active,
-input[type="reset"].primary:active,
-input[type="button"].primary:active,
-.button.primary:active {
-    background-color: #2a37aa !important;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-select:focus,
-textarea:focus {
-    border-color: #3a47ba !important;
-}
-
-input[type="checkbox"]:focus + label:before,
-input[type="radio"]:focus + label:before {
-    border-color: #3a47ba !important;
-}
-
-.dropotron > li.active > a, 
-.dropotron > li.active > span {
-    color: #3a47ba !important;
-}
-
-#header nav ul li.active > a, 
-#header nav ul li.active > span {
-    color: #3a47ba !important;
-}
-
-#titleBar .toggle:before {
-    background: #3a47ba !important;
-}
-
-/* Fix Banner Layout - Two columns: Left (logo + description), Right (profile) */
-#banner {
     min-height: auto !important;
     height: auto !important;
     padding: 0 !important;
 }
 
-#banner:before {
+#banner:before,
+#banner:after {
     display: none !important;
 }
 
 #banner .content {
-    display: block;
-    text-align: center;
+    position: relative !important;
+    display: block !important;
     padding: 0 !important;
-    max-width: 100%;
-    position: relative;
     margin: 0 !important;
+    max-width: 100% !important;
+    text-align: left !important;
+    vertical-align: top !important;
 }
 
-/* Banner Section */
 #banner .profile-section {
-    padding: 6em 3em 8em 3em;
-    background: #0d0f21;
+    padding: 6em 3em 8em 3em !important;
+    background: #0d0f21 !important;
 }
 
 #banner .profile-flex-three {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 6em;
-    max-width: 1400px;
-    margin: 0 auto;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 6em !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
 }
 
-/* Left Column - Logo and Description stacked */
-#banner .profile-flex-three .left-column {
-    flex: 1;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
+/* LEFT COLUMN - Logo + Description */
+#banner .left-column {
+    flex: 1 1 auto !important;
+    max-width: 600px !important;
+    min-width: 300px !important;
 }
 
-#banner .profile-flex-three .left-column .logo-section {
-    margin-bottom: 2em;
-    width: 100%;
+#banner .logo-section {
+    margin-bottom: 2em !important;
 }
 
-#banner .profile-flex-three .left-column .logo-section img {
-    max-width: 350px;
-    width: 100%;
-    height: auto;
-    display: block;
+#banner .logo-section img {
+    max-width: 350px !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
 }
 
-#banner .profile-flex-three .description {
-    text-align: left;
-    font-size: 1.1em;
-    line-height: 1.8em;
-    width: 100%;
+#banner .description {
+    text-align: left !important;
+    font-size: 1.1em !important;
+    line-height: 1.8em !important;
 }
 
-#banner .profile-flex-three .description p {
-    margin-bottom: 1.5em;
+#banner .description p {
+    margin-bottom: 1.5em !important;
 }
 
-/* Right Column - Profile Image ONLY */
-#banner .profile-flex-three .image.profile-image {
-    flex: 0 0 380px;
-    width: 380px;
-    border-radius: 12px;
-    overflow: hidden;
-    align-self: center;
+/* RIGHT COLUMN - Profile Image ONLY */
+#banner .profile-image {
+    flex: 0 0 380px !important;
+    width: 380px !important;
+    min-width: 380px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-#banner .profile-flex-three .image.profile-image img {
-    border-radius: 12px;
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+#banner .profile-image img {
+    border-radius: 12px !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
 }
 
-#banner .profile-flex-three .image.profile-image:before {
+#banner .profile-image:before {
     display: none !important;
 }
 
-/* Mobile responsive */
+/* Mobile */
 @media screen and (max-width: 980px) {
     #banner .profile-section {
-        padding: 4em 1.5em 4em 1.5em;
+        padding: 4em 2em 4em 2em !important;
     }
     
     #banner .profile-flex-three {
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 3em !important;
     }
     
-    #banner .profile-flex-three .left-column {
-        max-width: 100%;
+    #banner .left-column {
+        max-width: 100% !important;
+        text-align: center !important;
     }
     
-    #banner .profile-flex-three .left-column .logo-section img {
-        max-width: 300px;
-        margin: 0 auto;
+    #banner .logo-section img {
+        margin: 0 auto !important;
     }
     
-    #banner .profile-flex-three .description {
-        text-align: center;
+    #banner .description {
+        text-align: center !important;
     }
     
-    #banner .profile-flex-three .image.profile-image {
-        flex: 0 0 auto;
-        width: 70%;
-        max-width: 400px;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    #banner .profile-section {
-        padding: 3em 1em 3em 1em;
-    }
-    
-    #banner .profile-flex-three .left-column .logo-section img {
-        max-width: 250px;
-    }
-    
-    #banner .profile-flex-three .image.profile-image {
-        width: 85%;
+    #banner .profile-image {
+        flex: 0 0 auto !important;
+        width: 70% !important;
+        min-width: 0 !important;
+        max-width: 380px !important;
     }
 }
