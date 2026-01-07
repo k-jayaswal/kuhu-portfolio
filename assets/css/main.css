@@ -4524,7 +4524,7 @@ input[type="radio"]:focus + label:before {
 
 /* Banner Section 1 - Just Canva Name */
 #banner .name-section {
-    padding: 4em 2em 2em 2em;
+    padding: 6em 2em 4em 2em;
     text-align: center;
     background: #0d0f21;
 }
@@ -4539,39 +4539,62 @@ input[type="radio"]:focus + label:before {
 
 /* Banner Section 2 - Profile & Description */
 #banner .profile-section {
-    padding: 5em 2em 4em 2em;
+    padding: 6em 2em 8em 2em;
     background: #0d0f21;
 }
 
 #banner .profile-flex {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5em;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 3em;
 }
 
-#banner .profile-flex .description {
+/* Left side - Image and Description stacked */
+#banner .profile-flex .left-column {
     flex: 1;
+    max-width: 600px;
+}
+
+#banner .profile-flex .left-column .image.left-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+#banner .profile-flex .left-column .image.left-image img {
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#banner .profile-flex .left-column .image.left-image:before {
+    display: none !important;
+}
+
+#banner .profile-flex .description {
     text-align: left;
     font-size: 1.1em;
     line-height: 1.8em;
-    max-width: 700px;
-    padding-right: 2em;
 }
 
 #banner .profile-flex .description p {
     margin-bottom: 1.5em;
 }
 
+/* Right side - Profile Image */
 #banner .profile-flex .image.profile-image {
     flex: 0 0 380px;
     width: 380px;
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 6em;
 }
 
 #banner .profile-flex .image.profile-image img {
@@ -4604,6 +4627,16 @@ input[type="radio"]:focus + label:before {
         flex-direction: column;
         align-items: center;
         gap: 2em;
+    }
+    
+    #banner .profile-flex .left-column {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    #banner .profile-flex .left-column .image.left-image {
+        max-width: 80%;
+        margin: 0 auto 2em auto;
     }
     
     #banner .profile-flex .description {
