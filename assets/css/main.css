@@ -4131,7 +4131,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #272833;
+				background: #0d0f21;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -4360,15 +4360,15 @@ input, select, textarea {
 		
 		/* Force all backgrounds to black */
 		html, body {
-		    background: #000000 !important;
+		    background: #0d0f21 !important;
 		}
 		
 		#banner {
-		    background-color: #000000 !important;
+		    background-color: #0d0f21 !important;
 		}
 		
 		.spotlight {
-		    background-color: #000000 !important;
+		    background-color: #0d0f21 !important;
 		}
 		
 		.spotlight .content {
@@ -4376,15 +4376,15 @@ input, select, textarea {
 		}
 		
 		.wrapper {
-		    background: #000000 !important;
+		    background: #0d0f21 !important;
 		}
 		
 		#navPanel {
-		    background: #000000 !important;
+		    background: #0d0f21 !important;
 		}
 		
 		#titleBar {
-		    background: #000000 !important;
+		    background: #0d0f21 !important;
 		}
 		
 		/* Fix loader spinner color */
@@ -4393,7 +4393,7 @@ input, select, textarea {
 		}
 		
 		body.landing:after {
-		    background: #000000 !important;
+		    background: #0d0f21 !important;
 		}
 		
 		/* Banner Layout - Fix overlapping images */
