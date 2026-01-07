@@ -4357,260 +4357,274 @@ input, select, textarea {
 /* ============================================
    COMPLETE FIXES - ADD TO END OF main.css
    ============================================ */
-	
-	/* Change all backgrounds to #0d0f21 */
-	html, body {
-	    background: #0d0f21 !important;
-	}
-	
-	#banner {
-	    background-color: #0d0f21 !important;
-	}
-	
-	.spotlight {
-	    background-color: #0d0f21 !important;
-	}
-	
-	.spotlight .content {
-	    background: rgba(13, 15, 33, 0.95) !important;
-	}
-	
-	.wrapper {
-	    background: #0d0f21 !important;
-	}
-	
-	#navPanel {
-	    background: #0d0f21 !important;
-	}
-	
-	#titleBar {
-	    background: #0d0f21 !important;
-	}
-	
-	body.landing:after {
-	    background: #0d0f21 !important;
-	}
-	
-	#footer {
-	    background: #0d0f21 !important;
-	}
-	
-	/* Change all colored borders to purple (#7b68ee) */
-	.spotlight.style1 .content {
-	    border-color: #7b68ee !important;
-	}
-	
-	.spotlight.style2 .content {
-	    border-color: #7b68ee !important;
-	}
-	
-	.spotlight.style3 .content {
-	    border-color: #7b68ee !important;
-	}
-	
-	header.major:after {
-	    background: #7b68ee !important;
-	}
-	
-	/* Change button hover color to purple */
-	a {
-	    color: #7b68ee !important;
-	}
-	
-	input[type="submit"]:hover, input[type="submit"]:active,
-	input[type="reset"]:hover,
-	input[type="reset"]:active,
-	input[type="button"]:hover,
-	input[type="button"]:active,
-	.button:hover,
-	.button:active {
-	    box-shadow: inset 0 0 0 1px #7b68ee !important;
-	    color: #7b68ee !important;
-	}
-	
-	input[type="submit"]:active,
-	input[type="reset"]:active,
-	input[type="button"]:active,
-	.button:active {
-	    background-color: rgba(123, 104, 238, 0.15) !important;
-	}
-	
-	input[type="submit"].primary,
-	input[type="reset"].primary,
-	input[type="button"].primary,
-	.button.primary {
-	    background-color: #7b68ee !important;
-	    box-shadow: none !important;
-	    color: #ffffff !important;
-	}
-	
-	input[type="submit"].primary:hover,
-	input[type="reset"].primary:hover,
-	input[type="button"].primary:hover,
-	.button.primary:hover {
-	    background-color: #8b7aee !important;
-	}
-	
-	input[type="submit"].primary:active,
-	input[type="reset"].primary:active,
-	input[type="button"].primary:active,
-	.button.primary:active {
-	    background-color: #6b58de !important;
-	}
-	
-	input[type="text"]:focus,
-	input[type="password"]:focus,
-	input[type="email"]:focus,
-	select:focus,
-	textarea:focus {
-	    border-color: #7b68ee !important;
-	}
-	
-	input[type="checkbox"]:focus + label:before,
-	input[type="radio"]:focus + label:before {
-	    border-color: #7b68ee !important;
-	}
-	
-	.dropotron > li.active > a, 
-	.dropotron > li.active > span {
-	    color: #7b68ee !important;
-	}
-	
-	#header nav ul li.active > a, 
-	#header nav ul li.active > span {
-	    color: #7b68ee !important;
-	}
-	
-	#titleBar .toggle:before {
-	    background: #7b68ee !important;
-	}
-	
-	/* Fix Banner Layout - Separate sections */
-	#banner {
-	    min-height: auto !important;
-	    height: auto !important;
-	    padding: 0 !important;
-	}
-	
-	#banner:before {
-	    display: none !important;
-	}
-	
-	#banner .content {
-	    display: block;
-	    text-align: center;
-	    padding: 0 !important;
-	    max-width: 100%;
-	    position: relative;
-	    margin: 0 !important;
-	}
-	
-	/* Banner Section 1 - Just Canva Name */
-	#banner .name-section {
-	    padding: 4em 2em 2em 2em;
-	    text-align: center;
-	    background: #0d0f21;
-	}
-	
-	#banner .name-section img {
-	    max-width: 700px;
-	    width: 100%;
-	    height: auto;
-	    display: block;
-	    margin: 0 auto;
-	}
-	
-	/* Banner Section 2 - Profile & Description */
-	#banner .profile-section {
-	    padding: 3em 2em 4em 2em;
-	    background: #0d0f21;
-	}
-	
-	#banner .profile-flex {
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    gap: 4em;
-	    max-width: 1200px;
-	    margin: 0 auto;
-	}
-	
-	#banner .profile-flex .description {
-	    flex: 1;
-	    text-align: left;
-	    font-size: 1.1em;
-	    line-height: 1.8em;
-	    max-width: 600px;
-	}
-	
-	#banner .profile-flex .description p {
-	    margin-bottom: 1.5em;
-	}
-	
-	#banner .profile-flex .image.profile-image {
-	    flex: 0 0 350px;
-	    width: 350px;
-	    border-radius: 12px;
-	    overflow: hidden;
-	}
-	
-	#banner .profile-flex .image.profile-image img {
-	    border-radius: 12px;
-	    display: block;
-	    width: 100%;
-	    height: auto;
-	    object-fit: cover;
-	}
-	
-	#banner .profile-flex .image.profile-image:before {
-	    display: none !important;
-	}
-	
-	/* Mobile responsive */
-	@media screen and (max-width: 980px) {
-	    #banner .name-section {
-	        padding: 3em 1.5em 1.5em 1.5em;
-	    }
-	    
-	    #banner .name-section img {
-	        max-width: 500px;
-	    }
-	    
-	    #banner .profile-section {
-	        padding: 2em 1.5em 3em 1.5em;
-	    }
-	    
-	    #banner .profile-flex {
-	        flex-direction: column;
-	        align-items: center;
-	        gap: 2em;
-	    }
-	    
-	    #banner .profile-flex .description {
-	        text-align: center;
-	    }
-	    
-	    #banner .profile-flex .image.profile-image {
-	        flex: 0 0 auto;
-	        width: 70%;
-	        max-width: 350px;
-	    }
-	}
-	
-	@media screen and (max-width: 736px) {
-	    #banner .name-section {
-	        padding: 2em 1em 1em 1em;
-	    }
-	    
-	    #banner .name-section img {
-	        max-width: 350px;
-	    }
-	    
-	    #banner .profile-section {
-	        padding: 2em 1em 3em 1em;
-	    }
-	    
-	    #banner .profile-flex .image.profile-image {
-	        width: 85%;
-	    }
-	}
+
+/* Change all backgrounds to #0d0f21 */
+html, body {
+    background: #0d0f21 !important;
+}
+
+#banner {
+    background-color: #0d0f21 !important;
+}
+
+.spotlight {
+    background-color: #0d0f21 !important;
+}
+
+.spotlight .content {
+    background: rgba(13, 15, 33, 0.95) !important;
+}
+
+.wrapper {
+    background: #0d0f21 !important;
+}
+
+#navPanel {
+    background: #0d0f21 !important;
+}
+
+#titleBar {
+    background: #0d0f21 !important;
+}
+
+body.landing:after {
+    background: #0d0f21 !important;
+}
+
+#footer {
+    background: #0d0f21 !important;
+}
+
+/* Change all colored borders to purple (#7b68ee) */
+.spotlight.style1 .content {
+    border-color: #7b68ee !important;
+}
+
+.spotlight.style2 .content {
+    border-color: #7b68ee !important;
+}
+
+.spotlight.style3 .content {
+    border-color: #7b68ee !important;
+}
+
+header.major:after {
+    background: #7b68ee !important;
+}
+
+/* Keep navigation links white, only change hover to purple */
+#header nav ul li a,
+#header nav ul li span {
+    color: #ffffff !important;
+}
+
+#header nav ul li a:hover,
+#header nav ul li span:hover {
+    color: #7b68ee !important;
+}
+
+/* Change button hover color to purple */
+a {
+    color: #7b68ee !important;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active,
+input[type="reset"]:hover,
+input[type="reset"]:active,
+input[type="button"]:hover,
+input[type="button"]:active,
+.button:hover,
+.button:active {
+    box-shadow: inset 0 0 0 1px #7b68ee !important;
+    color: #7b68ee !important;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+.button:active {
+    background-color: rgba(123, 104, 238, 0.15) !important;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+.button.primary {
+    background-color: #7b68ee !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+.button.primary:hover {
+    background-color: #8b7aee !important;
+}
+
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+input[type="button"].primary:active,
+.button.primary:active {
+    background-color: #6b58de !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #7b68ee !important;
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+    border-color: #7b68ee !important;
+}
+
+.dropotron > li.active > a, 
+.dropotron > li.active > span {
+    color: #7b68ee !important;
+}
+
+#header nav ul li.active > a, 
+#header nav ul li.active > span {
+    color: #7b68ee !important;
+}
+
+#titleBar .toggle:before {
+    background: #7b68ee !important;
+}
+
+/* Fix Banner Layout - Separate sections */
+#banner {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+#banner:before {
+    display: none !important;
+}
+
+#banner .content {
+    display: block;
+    text-align: center;
+    padding: 0 !important;
+    max-width: 100%;
+    position: relative;
+    margin: 0 !important;
+}
+
+/* Banner Section 1 - Just Canva Name */
+#banner .name-section {
+    padding: 4em 2em 2em 2em;
+    text-align: center;
+    background: #0d0f21;
+}
+
+#banner .name-section img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Banner Section 2 - Profile & Description */
+#banner .profile-section {
+    padding: 5em 2em 4em 2em;
+    background: #0d0f21;
+}
+
+#banner .profile-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5em;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+#banner .profile-flex .description {
+    flex: 1;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    max-width: 700px;
+    padding-right: 2em;
+}
+
+#banner .profile-flex .description p {
+    margin-bottom: 1.5em;
+}
+
+#banner .profile-flex .image.profile-image {
+    flex: 0 0 380px;
+    width: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+#banner .profile-flex .image.profile-image img {
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#banner .profile-flex .image.profile-image:before {
+    display: none !important;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 980px) {
+    #banner .name-section {
+        padding: 3em 1.5em 1.5em 1.5em;
+    }
+    
+    #banner .name-section img {
+        max-width: 500px;
+    }
+    
+    #banner .profile-section {
+        padding: 2em 1.5em 3em 1.5em;
+    }
+    
+    #banner .profile-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    
+    #banner .profile-flex .description {
+        text-align: center;
+    }
+    
+    #banner .profile-flex .image.profile-image {
+        flex: 0 0 auto;
+        width: 70%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #banner .name-section {
+        padding: 2em 1em 1em 1em;
+    }
+    
+    #banner .name-section img {
+        max-width: 350px;
+    }
+    
+    #banner .profile-section {
+        padding: 2em 1em 3em 1em;
+    }
+    
+    #banner .profile-flex .image.profile-image {
+        width: 85%;
+    }
+}
