@@ -3775,7 +3775,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #272833;
+		background: #0d0f21;
 		padding: 6em 0;
 		text-align: center;
 	}
@@ -3917,7 +3917,7 @@ input, select, textarea {
 				}
 
 				.spotlight .content {
-					background-color: #1c1d26;
+					background-color: #0d0f21;
 					border-width: 0 !important;
 					border-top-width: 0.35em !important;
 					bottom: auto !important;
