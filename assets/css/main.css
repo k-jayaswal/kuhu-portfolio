@@ -4502,7 +4502,7 @@ input[type="radio"]:focus + label:before {
     background: #3a47ba !important;
 }
 
-/* Fix Banner Layout - Separate sections */
+/* Fix Banner Layout - Two column layout with description under left image */
 #banner {
     min-height: auto !important;
     height: auto !important;
@@ -4522,52 +4522,36 @@ input[type="radio"]:focus + label:before {
     margin: 0 !important;
 }
 
-/* Banner Section 1 - Just Canva Name */
-#banner .name-section {
-    padding: 6em 2em 4em 2em;
-    text-align: center;
-    background: #0d0f21;
-}
-
-#banner .name-section img {
-    max-width: 900px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Banner Section 2 - Profile & Description */
+/* Banner Section - Two columns */
 #banner .profile-section {
-    padding: 6em 2em 8em 2em;
+    padding: 8em 3em 8em 3em;
     background: #0d0f21;
 }
 
-#banner .profile-flex {
+#banner .profile-flex-three {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 5em;
+    gap: 6em;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 3em;
 }
 
-/* Left side - Image and Description stacked */
-#banner .profile-flex .left-column {
+/* Left Column - Image and Description stacked */
+#banner .profile-flex-three .left-column {
     flex: 1;
     max-width: 600px;
 }
 
-#banner .profile-flex .left-column .image.left-image {
+#banner .profile-flex-three .image.left-image {
     width: 100%;
     max-width: 500px;
     border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
-#banner .profile-flex .left-column .image.left-image img {
+#banner .profile-flex-three .image.left-image img {
     border-radius: 12px;
     display: block;
     width: 100%;
@@ -4575,29 +4559,29 @@ input[type="radio"]:focus + label:before {
     object-fit: cover;
 }
 
-#banner .profile-flex .left-column .image.left-image:before {
+#banner .profile-flex-three .image.left-image:before {
     display: none !important;
 }
 
-#banner .profile-flex .description {
+#banner .profile-flex-three .description {
     text-align: left;
     font-size: 1.1em;
     line-height: 1.8em;
 }
 
-#banner .profile-flex .description p {
+#banner .profile-flex-three .description p {
     margin-bottom: 1.5em;
 }
 
-/* Right side - Profile Image */
-#banner .profile-flex .image.profile-image {
-    flex: 0 0 380px;
-    width: 380px;
+/* Right Column - Profile Image */
+#banner .profile-flex-three .image.profile-image {
+    flex: 0 0 400px;
+    width: 400px;
     border-radius: 12px;
     overflow: hidden;
 }
 
-#banner .profile-flex .image.profile-image img {
+#banner .profile-flex-three .image.profile-image img {
     border-radius: 12px;
     display: block;
     width: 100%;
@@ -4605,65 +4589,42 @@ input[type="radio"]:focus + label:before {
     object-fit: cover;
 }
 
-#banner .profile-flex .image.profile-image:before {
+#banner .profile-flex-three .image.profile-image:before {
     display: none !important;
 }
 
 /* Mobile responsive */
 @media screen and (max-width: 980px) {
-    #banner .name-section {
-        padding: 3em 1.5em 1.5em 1.5em;
-    }
-    
-    #banner .name-section img {
-        max-width: 500px;
-    }
-    
     #banner .profile-section {
-        padding: 2em 1.5em 3em 1.5em;
+        padding: 4em 1.5em 4em 1.5em;
     }
     
-    #banner .profile-flex {
+    #banner .profile-flex-three {
         flex-direction: column;
         align-items: center;
-        gap: 2em;
+        gap: 3em;
     }
     
-    #banner .profile-flex .left-column {
-        max-width: 100%;
-        text-align: center;
-    }
-    
-    #banner .profile-flex .left-column .image.left-image {
-        max-width: 80%;
-        margin: 0 auto 2em auto;
-    }
-    
-    #banner .profile-flex .description {
-        text-align: center;
-    }
-    
-    #banner .profile-flex .image.profile-image {
+    #banner .profile-flex-three .image.left-image,
+    #banner .profile-flex-three .image.profile-image {
         flex: 0 0 auto;
         width: 70%;
         max-width: 350px;
     }
+    
+    #banner .profile-flex-three .description {
+        text-align: center;
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 736px) {
-    #banner .name-section {
-        padding: 2em 1em 1em 1em;
-    }
-    
-    #banner .name-section img {
-        max-width: 350px;
-    }
-    
     #banner .profile-section {
-        padding: 2em 1em 3em 1em;
+        padding: 3em 1em 3em 1em;
     }
     
-    #banner .profile-flex .image.profile-image {
+    #banner .profile-flex-three .image.left-image,
+    #banner .profile-flex-three .image.profile-image {
         width: 85%;
     }
 }
