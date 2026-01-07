@@ -3507,6 +3507,110 @@ input, select, textarea {
 	    text-align: left;
 	    margin-bottom: 1em;
 	}
+
+	/* Banner Layout - Add this after the existing #banner styles */
+	#banner .content {
+	    display: block;
+	    text-align: center;
+	    padding: 4em 3em;
+	    max-width: 100%;
+	}
+	
+	#banner .content header {
+	    display: block;
+	    text-align: center;
+	    margin-bottom: 2em;
+	}
+	
+	#banner .content header h2.name-image {
+	    margin: 0 0 2em 0;
+	}
+	
+	#banner .content header h2.name-image img {
+	    max-width: 600px;
+	    width: 100%;
+	    height: auto;
+	    display: block;
+	    margin: 0 auto;
+	}
+	
+	/* Banner flex container for description and image */
+	#banner .banner-flex {
+	    display: flex;
+	    align-items: flex-start;
+	    justify-content: space-between;
+	    gap: 3em;
+	    max-width: 1200px;
+	    margin: 0 auto;
+	}
+	
+	#banner .banner-flex .description {
+	    flex: 1;
+	    text-align: left;
+	    font-size: 1.1em;
+	    line-height: 1.8em;
+	}
+	
+	#banner .banner-flex .description p {
+	    margin-bottom: 1.5em;
+	}
+	
+	#banner .banner-flex .image.profile-image {
+	    flex: 0 0 350px;
+	    width: 350px;
+	    border-radius: 12px;
+	    overflow: hidden;
+	}
+	
+	#banner .banner-flex .image.profile-image img {
+	    border-radius: 12px;
+	    display: block;
+	    width: 100%;
+	    height: auto;
+	    object-fit: cover;
+	}
+	
+	/* Remove overlay from profile image */
+	#banner .banner-flex .image.profile-image:before {
+	    display: none;
+	}
+
+/* Mobile responsive */
+@media screen and (max-width: 980px) {
+    #banner .banner-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    
+    #banner .banner-flex .description {
+        text-align: center;
+    }
+    
+    #banner .banner-flex .image.profile-image {
+        flex: 0 0 auto;
+        width: 80%;
+        max-width: 350px;
+    }
+    
+    #banner .content header h2.name-image img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #banner .content {
+        padding: 3em 1.5em;
+    }
+    
+    #banner .banner-flex .image.profile-image {
+        width: 90%;
+    }
+    
+    #banner .content header h2.name-image img {
+        max-width: 300px;
+    }
+}
 	
 	/* Mobile adjustments */
 	@media screen and (max-width: 980px) {
@@ -4254,156 +4358,3 @@ input, select, textarea {
 					}
 
 	}
-
-		
-		/* ==========================================================================
-		   CUSTOM STYLES FOR KUHU'S PORTFOLIO
-		   Add these to the end of your main.css file
-		   ========================================================================== */
-		
-		/* Change site background to black */
-		html, body {
-		    background: #000000 !important;
-		}
-		
-		body.landing:after {
-		    background: #000000 !important;
-		}
-		
-		/* Remove image overlay filter */
-		.image:before {
-		    display: none !important;
-		}
-		
-		/* Banner Section - Reduce height */
-		#banner {
-		    background-color: #000000 !important;
-		    min-height: 70vh !important;
-		}
-		
-		#banner:before {
-		    height: 70vh !important;
-		}
-		
-		/* Banner Content Layout */
-		#banner .content {
-		    display: flex;
-		    flex-direction: row;
-		    align-items: flex-start;
-		    justify-content: space-between;
-		    padding: 4em 6em;
-		    max-width: 100%;
-		    text-align: left;
-		}
-		
-		#banner .content header {
-		    flex: 1;
-		    display: flex;
-		    flex-direction: column;
-		    text-align: left;
-		    margin-right: 3em;
-		}
-		
-		/* Name Image (kuhu canva) */
-		#banner .content header h2.name-image {
-		    margin: 0 0 1em 0;
-		    width: 100%;
-		}
-		
-		#banner .content header h2.name-image img {
-		    max-width: 450px;
-		    width: 100%;
-		    height: auto;
-		    display: block;
-		}
-		
-		/* Description text */
-		#banner .content header p {
-		    margin: 0.5em 0 0 0;
-		    font-size: 1.1em;
-		    line-height: 1.6em;
-		}
-		
-		/* Profile Image (kuhu_new) */
-		#banner .content .image.profile-image {
-		    position: relative;
-		    border-radius: 8px;
-		    height: auto;
-		    width: 22em;
-		    min-width: 22em;
-		    margin: 0;
-		    flex-shrink: 0;
-		}
-		
-		#banner .content .image.profile-image img {
-		    border-radius: 8px;
-		    display: block;
-		    width: 100%;
-		    height: auto;
-		    object-fit: cover;
-		}
-		
-		#banner .content .image.profile-image:before {
-		    display: none !important;
-		}
-		
-		/* Mobile Responsive */
-		@media screen and (max-width: 980px) {
-		    #banner .content {
-		        flex-direction: column;
-		        align-items: center;
-		        text-align: center;
-		        padding: 4em 2em;
-		    }
-		    
-		    #banner .content header {
-		        margin-right: 0;
-		        margin-bottom: 2em;
-		        text-align: center;
-		        align-items: center;
-		    }
-		    
-		    #banner .content header h2.name-image img {
-		        margin: 0 auto;
-		        max-width: 350px;
-		    }
-		    
-		    #banner .content .image.profile-image {
-		        width: 18em;
-		        min-width: 18em;
-		    }
-		}
-		
-		@media screen and (max-width: 736px) {
-		    #banner {
-		        min-height: calc(70vh - 44px) !important;
-		    }
-		    
-		    #banner:before {
-		        height: calc(70vh - 44px) !important;
-		    }
-		    
-		    #banner .content {
-		        padding: 3em 1.5em;
-		    }
-		    
-		    #banner .content header h2.name-image img {
-		        max-width: 280px;
-		    }
-		    
-		    #banner .content .image.profile-image {
-		        width: 15em;
-		        min-width: 15em;
-		    }
-		}
-		
-		@media screen and (max-width: 480px) {
-		    #banner .content header h2.name-image img {
-		        max-width: 220px;
-		    }
-		    
-		    #banner .content .image.profile-image {
-		        width: 12em;
-		        min-width: 12em;
-		    }
-		}
