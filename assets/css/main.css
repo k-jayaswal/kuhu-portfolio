@@ -4541,14 +4541,17 @@ input[type="radio"]:focus + label:before {
 #banner .profile-flex-three .left-column {
     flex: 1;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 #banner .profile-flex-three .left-column .logo-section {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    width: 100%;
 }
 
 #banner .profile-flex-three .left-column .logo-section img {
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     height: auto;
     display: block;
@@ -4558,18 +4561,20 @@ input[type="radio"]:focus + label:before {
     text-align: left;
     font-size: 1.1em;
     line-height: 1.8em;
+    width: 100%;
 }
 
 #banner .profile-flex-three .description p {
     margin-bottom: 1.5em;
 }
 
-/* Right Column - Profile Image */
+/* Right Column - Profile Image ONLY */
 #banner .profile-flex-three .image.profile-image {
-    flex: 0 0 400px;
-    width: 400px;
+    flex: 0 0 380px;
+    width: 380px;
     border-radius: 12px;
     overflow: hidden;
+    align-self: center;
 }
 
 #banner .profile-flex-three .image.profile-image img {
@@ -4590,23 +4595,23 @@ input[type="radio"]:focus + label:before {
         padding: 4em 1.5em 4em 1.5em;
     }
     
-    #banner .profile-flex-three .logo-section {
-        margin-bottom: 3em;
-    }
-    
-    #banner .profile-flex-three .logo-section img {
-        max-width: 300px;
-    }
-    
-    #banner .profile-flex-three .two-column-container {
+    #banner .profile-flex-three {
         flex-direction: column;
         align-items: center;
         gap: 3em;
     }
     
+    #banner .profile-flex-three .left-column {
+        max-width: 100%;
+    }
+    
+    #banner .profile-flex-three .left-column .logo-section img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
     #banner .profile-flex-three .description {
         text-align: center;
-        max-width: 90%;
     }
     
     #banner .profile-flex-three .image.profile-image {
@@ -4621,7 +4626,7 @@ input[type="radio"]:focus + label:before {
         padding: 3em 1em 3em 1em;
     }
     
-    #banner .profile-flex-three .logo-section img {
+    #banner .profile-flex-three .left-column .logo-section img {
         max-width: 250px;
     }
     
