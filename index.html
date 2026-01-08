@@ -12,7 +12,7 @@
 
 			<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="index.html">Home: Kuhu Jayaswal</a></h1>
+				<h1 id="logo"><a href="index.html">Home | Kuhu Jayaswal</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="#resume">Resume</a></li>
@@ -122,7 +122,7 @@
 					<li><a href="mailto:kjayaswal@olin.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Kuhu Jayaswal. All rights reserved. 2026 - Present.</li>
+					<li>&copy; Kuhu Jayaswal. 2026 - Present. All rights reserved.</li>
 				</ul>
 			</footer>
 
@@ -137,6 +137,20 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+		// Prevent the template's main.js from cloning the nav into the footer
+		$(document).on('ready', function() {
+		    // Remove any cloned nav that might have been added
+		    $('#footer ul').not('.icons').not('.copyright').remove();
+		    
+		    // Or completely disable the cloning part if you want to be extra safe
+		    // (this overrides the function that does the cloning)
+		    if (typeof skel !== 'undefined') {
+		        skel.on('-medium', function() {}); // overrides the mobile menu part too if needed
+		    }
+		});
+		</script>
 	</body>
 </html>
+
 
