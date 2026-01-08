@@ -3444,6 +3444,8 @@ input, select, textarea {
 		box-shadow: none;
 		position: absolute;
 	}
+
+
 /* ============================================
    FINAL WORKING CSS - Paste at END of main.css
    ============================================ */
@@ -3575,7 +3577,7 @@ input[type="button"].primary:active,
 }
 
 /* ============================================
-   FOOTER FIXES - COMPLETE OVERRIDE
+   FOOTER FIXES - NUCLEAR OVERRIDE
    ============================================ */
 
 #footer {
@@ -3583,19 +3585,31 @@ input[type="button"].primary:active,
     padding: 4em 0 !important;
     text-align: center !important;
     position: relative !important;
+    overflow: hidden !important;
 }
 
-/* Nuclear option - hide EVERYTHING first, then selectively show what we want */
-#footer * {
+/* Hide EVERYTHING that's not icons or copyright */
+#footer > *:not(.icons):not(.copyright),
+#footer h1,
+#footer h2, 
+#footer h3,
+#footer nav,
+#footer header,
+#footer .title,
+#footer #logo {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
 }
 
-/* Show only icons and copyright */
-#footer .icons,
-#footer .icons *,
-#footer .copyright,
-#footer .copyright * {
-    display: initial !important;
+/* Hide all links EXCEPT those inside .icons */
+#footer a:not(.icons a) {
+    display: none !important;
+    visibility: hidden !important;
 }
 
 #footer .icons {
@@ -3607,6 +3621,7 @@ input[type="button"].primary:active,
     padding: 0 !important;
     margin: 0 0 2em 0 !important;
     gap: 2em !important;
+    visibility: visible !important;
 }
 
 #footer .icons li {
@@ -3624,6 +3639,7 @@ input[type="button"].primary:active,
     transition: color 0.2s ease !important;
     border-bottom: none !important;
     text-decoration: none !important;
+    visibility: visible !important;
 }
 
 #footer .icons li a:hover {
@@ -3649,6 +3665,7 @@ input[type="button"].primary:active,
     padding: 0 !important;
     text-align: center !important;
     list-style: none !important;
+    visibility: visible !important;
 }
 
 #footer .copyright li {
@@ -3667,6 +3684,17 @@ input[type="button"].primary:active,
     color: rgba(255, 255, 255, 0.5) !important;
     border-bottom: none !important;
     display: inline !important;
+}
+
+/* Extra safety - hide any text nodes that aren't in icons or copyright */
+#footer::after {
+    content: '' !important;
+    display: block !important;
+    clear: both !important;
+}
+
+#footer .goto-next {
+    display: none !important;
 }
 
 /* ============================================
@@ -3694,7 +3722,7 @@ input[type="button"].primary:active,
 }
 
 #banner .profile-section {
-    padding: 4em 3em 8em 3em !important;
+    padding: 2em 3em 8em 3em !important;
     background: #0d0f21 !important;
 }
 
@@ -3762,7 +3790,7 @@ input[type="button"].primary:active,
 
 /* Move "Next" arrow down even lower */
 #banner .goto-next {
-    bottom: -2em !important;
+    bottom: -4em !important;
 }
 
 /* Mobile */
