@@ -56,7 +56,6 @@
 				<div class="content">
 					<header>
 						<h2>Resume</h2>
-						<p>-------------------------</p>
 					</header>
 					<p>A snapshot of my engineering experience, skills, and areas of focus.</p>
 					<ul class="actions">
@@ -116,16 +115,20 @@
 
 			<!-- Footer -->
 			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/kuhu-jayaswal/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/k-jayaswal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:kjayaswal@olin.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Kuhu Jayaswal. 2026 - Present. All rights reserved.</li>
-				</ul>
+			    <div class="footer-content">
+			        <!-- Social Icons -->
+			        <ul class="icons">
+			            <li><a href="https://www.linkedin.com/in/kuhu-jayaswal/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			            <li><a href="https://github.com/k-jayaswal" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			            <li><a href="mailto:kjayaswal@olin.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			        </ul>
+			        
+			        <!-- Copyright -->
+			        <div class="copyright">
+			            &copy; Kuhu Jayaswal. 2026 - Present. All rights reserved.
+			        </div>
+			    </div>
 			</footer>
-
 		</div>
 
 		<!-- Scripts -->
@@ -137,20 +140,9 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script>
-		// Prevent the template's main.js from cloning the nav into the footer
-		$(document).on('ready', function() {
-		    // Remove any cloned nav that might have been added
-		    $('#footer ul').not('.icons').not('.copyright').remove();
-		    
-		    // Or completely disable the cloning part if you want to be extra safe
-		    // (this overrides the function that does the cloning)
-		    if (typeof skel !== 'undefined') {
-		        skel.on('-medium', function() {}); // overrides the mobile menu part too if needed
-		    }
-		});
-		</script>
+
 	</body>
 </html>
+
 
 
