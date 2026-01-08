@@ -3577,54 +3577,86 @@ input[type="button"].primary:active,
 }
 
 /* ============================================
-   REMOVE ALL FOOTER HYPERLINKS (except social icons)
+   FOOTER FIXES - CORRECTED
    ============================================ */
 
-/* Hide all footer paragraphs and their links */
-#footer p,
-#footer p a {
-    display: none !important;
-    visibility: hidden !important;
+#footer {
+    background: #0d0f21 !important;
+    padding: 4em 0 !important;
+    text-align: center !important;
 }
 
-/* Hide any navigation links in footer */
+/* Hide all footer content except icons and copyright */
+#footer > *:not(.icons):not(.copyright) {
+    display: none !important;
+}
+
+/* Hide any navigation or extra links */
 #footer nav,
-#footer nav a,
-#footer nav ul,
-#footer nav li {
+#footer nav *,
+#footer p,
+#footer ul:not(.icons):not(.copyright) {
     display: none !important;
-    visibility: hidden !important;
 }
 
-/* Hide any lists that aren't .icons or .copyright */
-#footer ul:not(.icons):not(.copyright),
-#footer ul:not(.icons):not(.copyright) li,
-#footer ul:not(.icons):not(.copyright) li a {
-    display: none !important;
-    visibility: hidden !important;
+/* Style the social icons - CENTERED */
+#footer .icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 2em 0 !important;
+    gap: 2em !important;
 }
 
-/* Ensure social icons remain visible */
-#footer .icons,
-#footer .icons li,
+#footer .icons li {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 #footer .icons li a {
     display: inline-block !important;
-    visibility: visible !important;
+    color: #ffffff !important;
+    font-size: 1.8em !important;
+    transition: color 0.2s ease !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
 }
 
-/* Keep copyright visible but hide any links inside it except the text */
+#footer .icons li a:hover {
+    color: #3a47ba !important;
+}
+
+#footer .icons li .label {
+    display: none !important;
+}
+
+/* Style copyright - CENTERED */
 #footer .copyright {
     display: block !important;
-    visibility: visible !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 0.9em !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
+#footer .copyright li {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove any links in copyright (make them unclickable) */
 #footer .copyright a {
-    pointer-events: none !important;
     color: rgba(255, 255, 255, 0.5) !important;
     text-decoration: none !important;
     border-bottom: none !important;
+    pointer-events: none !important;
+    cursor: default !important;
 }
-
 /* ============================================
    BANNER LAYOUT
    ============================================ */
