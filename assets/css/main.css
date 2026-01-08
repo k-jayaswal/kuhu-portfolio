@@ -3781,9 +3781,9 @@ input[type="button"].primary:active,
     }
     
     #banner .profile-image {
-        flex: 0 0 auto !important;
+        flex: 0 0 350px !important;
         width: 70% !important;
-        max-width: 380px !important;
+        max-width: 350px !important;
         margin-top: 0 !important;
         margin-left: 0 !important;
     }
