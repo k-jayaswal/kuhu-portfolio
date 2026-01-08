@@ -3648,6 +3648,15 @@ input[type="button"].primary:active,
     border-bottom: none !important;
 }
 
+/* Hide any extra text/links that shouldn't be in footer */
+#footer > *:not(.icons):not(.copyright) {
+    display: none !important;
+}
+
+#footer .copyright li:not(:first-child) {
+    display: none !important;
+}
+
 /* ============================================
    BANNER LAYOUT
    ============================================ */
@@ -3718,8 +3727,8 @@ input[type="button"].primary:active,
 
 /* RIGHT - Profile Image */
 #banner .profile-image {
-    flex: 0 0 350px !important;
-    width: 350px !important;
+    flex: 0 0 450px !important;
+    width: 450px !important;
     border-radius: 12px !important;
     overflow: hidden !important;
     margin: 0 !important;
@@ -3739,9 +3748,9 @@ input[type="button"].primary:active,
     display: none !important;
 }
 
-/* Move "Next" arrow down */
+/* Move "Next" arrow down even lower */
 #banner .goto-next {
-    bottom: 2em !important;
+    bottom: -2em !important;
 }
 
 /* Mobile */
