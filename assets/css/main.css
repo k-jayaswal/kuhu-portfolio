@@ -3444,7 +3444,6 @@ input, select, textarea {
 		box-shadow: none;
 		position: absolute;
 	}
-
 /* ============================================
    FINAL WORKING CSS - Paste at END of main.css
    ============================================ */
@@ -3583,29 +3582,24 @@ input[type="button"].primary:active,
     background: #0d0f21 !important;
     padding: 4em 0 !important;
     text-align: center !important;
+    position: relative !important;
 }
 
-/* Hide everything except icons and copyright */
-#footer > *:not(.icons):not(.copyright) {
+/* Nuclear option - hide EVERYTHING first, then selectively show what we want */
+#footer * {
     display: none !important;
 }
 
-/* Hide any navigation, headers, or extra content */
-#footer nav,
-#footer header,
-#footer h1,
-#footer h2,
-#footer h3,
-#footer a:not(.icons a) {
-    display: none !important;
-}
-
+/* Show only icons and copyright */
 #footer .icons,
-#footer .copyright {
-    display: flex !important;
+#footer .icons *,
+#footer .copyright,
+#footer .copyright * {
+    display: initial !important;
 }
 
 #footer .icons {
+    display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     flex-wrap: wrap !important;
@@ -3629,6 +3623,7 @@ input[type="button"].primary:active,
     font-size: 1.8em !important;
     transition: color 0.2s ease !important;
     border-bottom: none !important;
+    text-decoration: none !important;
 }
 
 #footer .icons li a:hover {
@@ -3638,6 +3633,11 @@ input[type="button"].primary:active,
 
 #footer .icons li .icon:before {
     font-size: 1em !important;
+    display: inline-block !important;
+}
+
+#footer .icons li .label {
+    display: none !important;
 }
 
 #footer .copyright {
@@ -3652,7 +3652,7 @@ input[type="button"].primary:active,
 }
 
 #footer .copyright li {
-    display: inline !important;
+    display: inline-block !important;
     border-left: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -3666,6 +3666,7 @@ input[type="button"].primary:active,
 #footer .copyright li a {
     color: rgba(255, 255, 255, 0.5) !important;
     border-bottom: none !important;
+    display: inline !important;
 }
 
 /* ============================================
