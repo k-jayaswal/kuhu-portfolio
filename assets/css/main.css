@@ -3828,3 +3828,26 @@ input[type="button"].primary:active,
         margin-left: 0 !important;
     }
 }
+
+
+/* Hide any navigation/menu links in the footer (the duplicate tabs) */
+#footer ul:not(.icons):not(.copyright),
+#footer .menu,
+#footer .links,
+#footer nav {
+    display: none !important;
+}
+
+/* Extra safety: hide any list items or links that might still leak through */
+#footer ul:not(.icons):not(.copyright) li,
+#footer ul:not(.icons):not(.copyright) a {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* If the footer has a direct <nav> or another wrapper */
+#footer > nav,
+#footer > .menu,
+#footer > .links {
+    display: none !important;
+}
