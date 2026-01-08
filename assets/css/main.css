@@ -3577,124 +3577,52 @@ input[type="button"].primary:active,
 }
 
 /* ============================================
-   FOOTER FIXES - NUCLEAR OVERRIDE
+   REMOVE ALL FOOTER HYPERLINKS (except social icons)
    ============================================ */
 
-#footer {
-    background: #0d0f21 !important;
-    padding: 4em 0 !important;
-    text-align: center !important;
-    position: relative !important;
-    overflow: hidden !important;
+/* Hide all footer paragraphs and their links */
+#footer p,
+#footer p a {
+    display: none !important;
+    visibility: hidden !important;
 }
 
-/* Hide EVERYTHING that's not icons or copyright */
-#footer > *:not(.icons):not(.copyright),
-#footer h1,
-#footer h2, 
-#footer h3,
+/* Hide any navigation links in footer */
 #footer nav,
-#footer header,
-#footer .title,
-#footer #logo {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
-}
-
-/* Hide all links EXCEPT those inside .icons */
-#footer a:not(.icons a) {
+#footer nav a,
+#footer nav ul,
+#footer nav li {
     display: none !important;
     visibility: hidden !important;
 }
 
-#footer .icons {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 0 2em 0 !important;
-    gap: 2em !important;
-    visibility: visible !important;
+/* Hide any lists that aren't .icons or .copyright */
+#footer ul:not(.icons):not(.copyright),
+#footer ul:not(.icons):not(.copyright) li,
+#footer ul:not(.icons):not(.copyright) li a {
+    display: none !important;
+    visibility: hidden !important;
 }
 
-#footer .icons li {
-    display: inline-block !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    height: auto !important;
-    line-height: normal !important;
-}
-
+/* Ensure social icons remain visible */
+#footer .icons,
+#footer .icons li,
 #footer .icons li a {
     display: inline-block !important;
-    color: #ffffff !important;
-    font-size: 1.8em !important;
-    transition: color 0.2s ease !important;
-    border-bottom: none !important;
-    text-decoration: none !important;
     visibility: visible !important;
 }
 
-#footer .icons li a:hover {
-    color: #3a47ba !important;
-    border-bottom: none !important;
-}
-
-#footer .icons li .icon:before {
-    font-size: 1em !important;
-    display: inline-block !important;
-}
-
-#footer .icons li .label {
-    display: none !important;
-}
-
+/* Keep copyright visible but hide any links inside it except the text */
 #footer .copyright {
     display: block !important;
-    color: rgba(255, 255, 255, 0.5) !important;
-    font-size: 0.9em !important;
-    line-height: 1.8em !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-    list-style: none !important;
     visibility: visible !important;
 }
 
-#footer .copyright li {
-    display: inline-block !important;
-    border-left: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-}
-
-#footer .copyright li:not(:first-child) {
-    display: none !important;
-}
-
-#footer .copyright li a {
+#footer .copyright a {
+    pointer-events: none !important;
     color: rgba(255, 255, 255, 0.5) !important;
+    text-decoration: none !important;
     border-bottom: none !important;
-    display: inline !important;
-}
-
-/* Extra safety - hide any text nodes that aren't in icons or copyright */
-#footer::after {
-    content: '' !important;
-    display: block !important;
-    clear: both !important;
-}
-
-#footer .goto-next {
-    display: none !important;
 }
 
 /* ============================================
