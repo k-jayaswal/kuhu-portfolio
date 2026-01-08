@@ -3722,7 +3722,7 @@ input[type="button"].primary:active,
 }
 
 #banner .profile-section {
-    padding: 0em 3em 8em 3em !important;
+    padding: 2em 3em 8em 3em !important;
     background: #0d0f21 !important;
 }
 
@@ -3790,7 +3790,7 @@ input[type="button"].primary:active,
 
 /* Move "Next" arrow down even lower */
 #banner .goto-next {
-    bottom: -2em !important;
+    bottom: -4em !important;
 }
 
 /* Mobile */
