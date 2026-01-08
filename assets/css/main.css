@@ -3589,33 +3589,44 @@ input[type="button"].primary:active,
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    flex-wrap: wrap !important;
     list-style: none !important;
     padding: 0 !important;
     margin: 0 0 2em 0 !important;
+    gap: 2em !important;
 }
 
 #footer .icons li {
     display: inline-block !important;
-    margin: 0 1em !important;
+    margin: 0 !important;
     padding: 0 !important;
+    height: auto !important;
+    line-height: normal !important;
 }
 
 #footer .icons li a {
     color: #ffffff !important;
-    font-size: 1.5em !important;
+    font-size: 1.8em !important;
     transition: color 0.2s ease !important;
+    border-bottom: none !important;
 }
 
 #footer .icons li a:hover {
     color: #3a47ba !important;
+    border-bottom: none !important;
+}
+
+#footer .icons li .icon:before {
+    font-size: 1em !important;
 }
 
 #footer .copyright {
     color: rgba(255, 255, 255, 0.5) !important;
     font-size: 0.9em !important;
-    line-height: 1.5em !important;
+    line-height: 1.8em !important;
     margin: 0 !important;
     padding: 0 !important;
+    text-align: center !important;
 }
 
 #footer .copyright li {
@@ -3630,6 +3641,11 @@ input[type="button"].primary:active,
     border-left: 0 !important;
     margin-left: 0 !important;
     padding-left: 0 !important;
+}
+
+#footer .copyright li a {
+    color: rgba(255, 255, 255, 0.5) !important;
+    border-bottom: none !important;
 }
 
 /* ============================================
@@ -3707,7 +3723,7 @@ input[type="button"].primary:active,
     border-radius: 12px !important;
     overflow: hidden !important;
     margin: 0 !important;
-    margin-top: 12em !important;
+    margin-top: 6em !important;
     margin-left: auto !important;
 }
 
@@ -3721,6 +3737,11 @@ input[type="button"].primary:active,
 
 #banner .profile-image:before {
     display: none !important;
+}
+
+/* Move "Next" arrow down */
+#banner .goto-next {
+    bottom: 2em !important;
 }
 
 /* Mobile */
