@@ -4288,7 +4288,7 @@ input[type="button"].primary:active,
 #footer .icons li a {
     display: inline-block !important;
     color: #ffffff !important;
-    font-size: 1.2em !important;
+    font-size: 2em !important;
     transition: color 0.2s ease !important;
     border-bottom: none !important;
     text-decoration: none !important;
@@ -4410,7 +4410,7 @@ input[type="button"].primary:active,
 /* RIGHT - Profile Image */
 #banner .profile-image {
     flex: 0 0 380px !important;
-    width: 380px !important;
+    width: 480px !important;
     border-radius: 12px !important;
     overflow: hidden !important;
     margin: 0 !important;
@@ -4422,7 +4422,7 @@ input[type="button"].primary:active,
     border-radius: 12px !important;
     display: block !important;
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     object-fit: cover !important;
 }
 
@@ -4432,7 +4432,7 @@ input[type="button"].primary:active,
 
 /* Move "Next" arrow down even lower */
 #banner .goto-next {
-    bottom: -4em !important;
+    bottom: 2em !important;
 }
 
 /* Mobile */
