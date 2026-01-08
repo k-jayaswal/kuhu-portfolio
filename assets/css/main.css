@@ -3576,6 +3576,63 @@ input[type="button"].primary:active,
 }
 
 /* ============================================
+   FOOTER FIXES
+   ============================================ */
+
+#footer {
+    background: #0d0f21 !important;
+    padding: 4em 0 !important;
+    text-align: center !important;
+}
+
+#footer .icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 2em 0 !important;
+}
+
+#footer .icons li {
+    display: inline-block !important;
+    margin: 0 1em !important;
+    padding: 0 !important;
+}
+
+#footer .icons li a {
+    color: #ffffff !important;
+    font-size: 1.5em !important;
+    transition: color 0.2s ease !important;
+}
+
+#footer .icons li a:hover {
+    color: #3a47ba !important;
+}
+
+#footer .copyright {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 0.9em !important;
+    line-height: 1.5em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#footer .copyright li {
+    display: inline-block !important;
+    border-left: solid 1px rgba(255, 255, 255, 0.3) !important;
+    margin-left: 1em !important;
+    padding-left: 1em !important;
+    list-style: none !important;
+}
+
+#footer .copyright li:first-child {
+    border-left: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* ============================================
    BANNER LAYOUT
    ============================================ */
 
@@ -3617,8 +3674,8 @@ input[type="button"].primary:active,
 
 /* LEFT - Logo + Description */
 #banner .left-column {
-    flex: 1 1 auto !important;
-    max-width: 600px !important;
+    flex: 1.5 1 auto !important;
+    max-width: 800px !important;
     margin-right: auto !important;
 }
 
@@ -3627,7 +3684,7 @@ input[type="button"].primary:active,
 }
 
 #banner .logo-section img {
-    max-width: 550px !important;
+    max-width: 650px !important;
     width: 100% !important;
     height: auto !important;
     display: block !important;
@@ -3645,8 +3702,8 @@ input[type="button"].primary:active,
 
 /* RIGHT - Profile Image */
 #banner .profile-image {
-    flex: 0 0 380px !important;
-    width: 380px !important;
+    flex: 0 0 350px !important;
+    width: 350px !important;
     border-radius: 12px !important;
     overflow: hidden !important;
     margin: 0 !important;
