@@ -3586,7 +3586,17 @@ input[type="button"].primary:active,
 }
 
 /* Hide everything except icons and copyright */
-#footer > * {
+#footer > *:not(.icons):not(.copyright) {
+    display: none !important;
+}
+
+/* Hide any navigation, headers, or extra content */
+#footer nav,
+#footer header,
+#footer h1,
+#footer h2,
+#footer h3,
+#footer a:not(.icons a) {
     display: none !important;
 }
 
@@ -3614,6 +3624,7 @@ input[type="button"].primary:active,
 }
 
 #footer .icons li a {
+    display: inline-block !important;
     color: #ffffff !important;
     font-size: 1.8em !important;
     transition: color 0.2s ease !important;
@@ -3727,8 +3738,8 @@ input[type="button"].primary:active,
 
 /* RIGHT - Profile Image */
 #banner .profile-image {
-    flex: 0 0 450px !important;
-    width: 450px !important;
+    flex: 0 0 380px !important;
+    width: 380px !important;
     border-radius: 12px !important;
     overflow: hidden !important;
     margin: 0 !important;
@@ -3781,9 +3792,9 @@ input[type="button"].primary:active,
     }
     
     #banner .profile-image {
-        flex: 0 0 350px !important;
+        flex: 0 0 auto !important;
         width: 70% !important;
-        max-width: 350px !important;
+        max-width: 380px !important;
         margin-top: 0 !important;
         margin-left: 0 !important;
     }
