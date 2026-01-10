@@ -4432,7 +4432,7 @@ input[type="button"].primary:active,
 
 /* Move "Next" arrow down even lower */
 #banner .goto-next {
-    bottom: -6em !important;
+    bottom: 4em !important;
 }
 
 /* Mobile */
@@ -4544,7 +4544,7 @@ input[type="button"].primary:active,
     flex: 0 0 auto !important;
     width: auto !important;
     height: auto !important;
-    max-width: 350px !important;
+    max-width: 400px !important;
     border-radius: 16px !important;
     overflow: hidden !important;
     margin: 6em 0 0 auto !important;
