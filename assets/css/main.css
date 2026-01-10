@@ -4541,23 +4541,25 @@ input[type="button"].primary:active,
 
 /* RIGHT - Profile Image */
 #banner .profile-image {
-    flex: 0 0 auto !important;           /* don't grow or shrink */
-    width: auto !important;              /* let image decide its own size */
+    flex: 0 0 auto !important;
+    width: auto !important;
     height: auto !important;
-    max-width: 420px !important;         /* optional cap - increase if your original is larger */
-    border-radius: 12px !important;
-    overflow: visible !important;        /* important: no cropping */
+    max-width: 450px !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
     margin: 6em 0 0 auto !important;
     background: none !important;
+    border: none !important;
 }
 
 #banner .profile-image img {
     display: block !important;
-    width: auto !important;              /* use original pixel width */
-    height: auto !important;             /* use original pixel height */
-    max-width: 100% !important;          /* responsive: shrink on small screens only */
-    border-radius: 12px !important;
-    object-fit: none !important;         /* CRITICAL: no cropping or zooming */
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
     transform: none !important;
     clip-path: none !important;
 }
@@ -4566,9 +4568,9 @@ input[type="button"].primary:active,
     display: none !important;
 }
 
-/* Move "Next" arrow down even lower */
-#banner .goto-next {
-    bottom: 8em !important;
+/* Remove any overlay effects from the image class */
+.image:before {
+    display: none !important;
 }
 
 /* Mobile */
