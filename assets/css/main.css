@@ -4608,3 +4608,24 @@ input[type="button"].primary:active,
         margin-left: 0 !important;
     }
 }
+
+/* ============================================
+   REMOVE OVERLAY FILTER FROM SPOTLIGHT IMAGES
+   ============================================ */
+
+/* Remove the overlay from spotlight cover images */
+.spotlight .image.fit.main:before {
+    display: none !important;
+}
+
+/* Alternative: If the above doesn't work, try this more specific selector */
+.spotlight .image:before {
+    display: none !important;
+}
+
+/* Or target each section specifically */
+#resume .image.fit.main:before,
+#projects .image.fit.main:before,
+#awards .image.fit.main:before {
+    display: none !important;
+}
