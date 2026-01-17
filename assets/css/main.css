@@ -4613,19 +4613,25 @@ input[type="button"].primary:active,
    REMOVE OVERLAY FILTER FROM SPOTLIGHT IMAGES
    ============================================ */
 
-/* Remove the overlay from spotlight cover images */
-.spotlight .image.fit.main:before {
+/* Target the span elements with image class in spotlight sections */
+span.image.fit.main:before {
     display: none !important;
+    background: none !important;
 }
 
-/* Alternative: If the above doesn't work, try this more specific selector */
+/* Also target by section ID */
+#resume span.image:before,
+#projects span.image:before,
+#awards span.image:before {
+    display: none !important;
+    background: none !important;
+}
+
+/* Broader override - remove overlay from ALL spotlight images */
+.spotlight span.image:before,
 .spotlight .image:before {
     display: none !important;
-}
-
-/* Or target each section specifically */
-#resume .image.fit.main:before,
-#projects .image.fit.main:before,
-#awards .image.fit.main:before {
-    display: none !important;
+    background-image: none !important;
+    background: transparent !important;
+    opacity: 0 !important;
 }
